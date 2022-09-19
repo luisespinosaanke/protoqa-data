@@ -22,3 +22,7 @@ For a full description of the data format, see [DATAFORMAT.md](DATAFORMAT.md).
 
 ## Notes:
 This repository contains a [data statement](DATASTATEMENT.md) (based on [Datasheets for Datasets (Gebru et al. 2020)](https://arxiv.org/pdf/1803.09010.pdf) and [earlier NLP-specific work (Bender and Friedman 2018)](https://www.aclweb.org/anthology/Q18-1041.pdf)) to provide transparency in data use and encourage others to do so.  This is a preliminary version of the statement; please post issues in the repository or contact the authors if you have questions regarding the data details or suggestions regarding the dataset use. 
+
+## Fine-tuning T5 on ProtoQA
+
+There is a jupyter notebook at the root folder (`prepare_protoqa-train.ipynb`) that prepares the training set and converts it to a csv file (at the root folder too, `train.csv`). This csv file is used to [fine-tune T5](https://colab.research.google.com/drive/1Bu1-lBNQSGWN6drbuF4TZw_D1NBeR9R3#scrollTo=pMLzxbcwABx0) on a set of question-answer pairs.
